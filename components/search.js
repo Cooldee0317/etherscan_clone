@@ -17,7 +17,7 @@ export default function Search() {
   const handleSearch = async () => {
     document.querySelector("#inputField").value = "";
 
-    const response = await axios.get("http://etherscan-clone-backend.vercel.app/address", {
+    const response = await axios.get("https://etherscan-clone-backend.vercel.app/address", {
       params: { address: searchInput },
     });
     console.log("response", response); 

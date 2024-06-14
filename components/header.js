@@ -11,7 +11,7 @@ export default function Header() {
   useEffect(() => {
     const getEthPrice = async () => {
       const response = await axios.get(
-        "http://etherscan-clone-backend.vercel.app/getetherprice",
+        "https://etherscan-clone-backend.vercel.app/getetherprice",
         {}
       );
       //   console.log(response)

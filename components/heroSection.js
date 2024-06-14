@@ -24,12 +24,12 @@ export default function HeroSection() {
 
   useEffect(() => {
     const getethPrice = async () => {
-      const response = await axios.get("http://etherscan-clone-backend.vercel.app/getetherprice", {});
+      const response = await axios.get("https://etherscan-clone-backend.vercel.app/getetherprice", {});
       setEthPrice(response.data.usdPrice);
     };
 
     const getBlockInfo = async () => {
-      const response = await axios.get("http://etherscan-clone-backend.vercel.app/blockinfo", {});
+      const response = await axios.get("https://etherscan-clone-backend.vercel.app/blockinfo", {});
       console.log("response",response)
       const blockArray = [
         response.data.previousBlockInfo[1],
